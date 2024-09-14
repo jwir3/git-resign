@@ -6,4 +6,4 @@ else
   BRANCH=main
 fi
 
-git rebase $BRANCH --gpg sign --comitter-date-is-author-date
+git rebase $BRANCH --gpg-sign --committer-date-is-author-date

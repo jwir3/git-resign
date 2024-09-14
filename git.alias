@@ -1,0 +1,8 @@
+# Copy this code into your .bashrc or .zshrc
+function git() {
+  if [[ "$1" == "resign" ]]; then
+    shift 1
+    command ~/Source/git-resign/git-resign.sh "$@"
+  fi
+}
+
