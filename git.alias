@@ -1,8 +1,8 @@
-# Copy this code into your .bashrc or .zshrc
+# Add ability to re-sign commits with git-resign
 function git() {
   if [[ "$1" == "resign" ]]; then
     shift 1
-    command ~/Source/git-resign/git-resign.sh "$@"
+    command DIRECTORY_PATH_GIT_RESIGN/git-resign.sh "$@"
   fi
 }
-
+# git-resign end
